@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="_yNZO4zC3F06KHQ3OhWj" name="Page-1">
+        <mxGraphModel dx="731" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Write review" vertex="1">
+                    <mxGeometry height="40" width="120" x="210" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-9" edge="1" parent="1" source="lDWKPbg8R9z_wNos1ej5-8" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;" target="lDWKPbg8R9z_wNos1ej5-12" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-10" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="255" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-11" edge="1" parent="1" source="lDWKPbg8R9z_wNos1ej5-10" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;" target="lDWKPbg8R9z_wNos1ej5-8" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="315" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Send in review" vertex="1">
+                    <mxGeometry height="40" width="120" x="210" y="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-13" edge="1" parent="1" source="lDWKPbg8R9z_wNos1ej5-12" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;" target="lDWKPbg8R9z_wNos1ej5-16" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Controll text" vertex="1">
+                    <mxGeometry height="40" width="120" x="210" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-17" edge="1" parent="1" source="lDWKPbg8R9z_wNos1ej5-16" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;" target="lDWKPbg8R9z_wNos1ej5-22" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-22" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Is valid?" vertex="1">
+                    <mxGeometry height="40" width="80" x="230" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-23" edge="1" parent="1" source="lDWKPbg8R9z_wNos1ej5-22" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;" value="no">
+                    <mxGeometry relative="1" x="-1" as="geometry">
+                        <mxPoint x="440" y="650" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lDWKPbg8R9z_wNos1ej5-24" edge="1" parent="1" source="lDWKPbg8R9z_wNos1ej5-22" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;" value="yes">
+                    <mxGeometry relative="1" x="-1" as="geometry">
+                        <mxPoint x="270" y="770" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
