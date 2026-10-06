@@ -315,12 +315,12 @@
         </mxCell>
         <UserObject id="implemented-c25" label="game_page" tooltip="EXTRA&#10;In the implementation, but not in the design.">
         <mxCell style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;startSize=26;fillColor=#d5e8d4;swimlaneFillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="implemented-1">
-          <mxGeometry x="930.0" y="260" width="486" height="52" as="geometry" />
+          <mxGeometry x="930.0" y="260" width="500" height="52" as="geometry" />
         </mxCell>
         </UserObject>
-        <UserObject id="implemented-m26" label="+ submit_review(game: Game, author: User, content: string): Review" tooltip="EXTRA&#10;In the implementation, but not in the design.">
+        <UserObject id="implemented-m26" label="+ send_inn_review(game: Game, author: User, content: string): Review" tooltip="EXTRA&#10;In the implementation, but not in the design.">
         <mxCell style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="implemented-c25">
-          <mxGeometry y="26" width="486" height="26" as="geometry" />
+          <mxGeometry y="26" width="500" height="26" as="geometry" />
         </mxCell>
         </UserObject>
         <mxCell id="implemented-c27" value="Repo_Comment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;startSize=26;" vertex="1" parent="implemented-1">
@@ -475,7 +475,7 @@
         </mxCell>
         </UserObject>
         <UserObject id="implemented-e55" label="" tooltip="EXTRA&#10;In the implementation, but not in the design.">
-        <mxCell style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.0412;exitY=1.0;entryX=1.0;entryY=0.0763;strokeColor=#82b366;strokeWidth=3;fontColor=#82b366;" edge="1" parent="implemented-1" source="implemented-c25" target="implemented-c17">
+        <mxCell style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.04;exitY=1.0;entryX=1.0;entryY=0.0763;strokeColor=#82b366;strokeWidth=3;fontColor=#82b366;" edge="1" parent="implemented-1" source="implemented-c25" target="implemented-c17">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="950" y="640" />
@@ -484,7 +484,7 @@
         </mxCell>
         </UserObject>
         <UserObject id="implemented-e56" label="" tooltip="EXTRA&#10;In the implementation, but not in the design.">
-        <mxCell style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.0412;exitY=1.0;entryX=1.0;entryY=0.787;strokeColor=#82b366;strokeWidth=3;fontColor=#82b366;" edge="1" parent="implemented-1" source="implemented-c25" target="implemented-c2">
+        <mxCell style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.04;exitY=1.0;entryX=1.0;entryY=0.787;strokeColor=#82b366;strokeWidth=3;fontColor=#82b366;" edge="1" parent="implemented-1" source="implemented-c25" target="implemented-c2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="950" y="330" />
@@ -493,7 +493,7 @@
         </mxCell>
         </UserObject>
         <UserObject id="implemented-e57" label="" tooltip="EXTRA&#10;In the implementation, but not in the design.">
-        <mxCell style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.0412;exitY=0.0;entryX=1.0;entryY=0.7464;strokeColor=#82b366;strokeWidth=3;fontColor=#82b366;" edge="1" parent="implemented-1" source="implemented-c25" target="implemented-c38">
+        <mxCell style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.04;exitY=0.0;entryX=1.0;entryY=0.7464;strokeColor=#82b366;strokeWidth=3;fontColor=#82b366;" edge="1" parent="implemented-1" source="implemented-c25" target="implemented-c38">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="950" y="250" />

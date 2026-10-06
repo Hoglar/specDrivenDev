@@ -16,7 +16,7 @@ og rapporter forskjeller mot input. Ikke endre diagrammer, filnavn eller verifie
 | A4 | Behold readerens relasjonsretning og antall. Bruk rollenavn reviews, comments, comment, developers, repository og game. Disse navnene er antakelser fordi originalen ikke angir roller. Vektorer av weak_ptr representerer ikke-eiende samlinger; enkeltrelasjoner bruker råpekere. |
 | A5 | Tilstandsmaskinen krever private state/suspension_active og public handle samt private no_active_suspension. Dette gir ekstra klasseelementer mot klassediagrammet og rapporteres. |
 | A6 | Den løse teksten tolkes som ReopenAccount [no_active_suspension]. Sperreflagget bevares ved lukking. After30Days er en eksplisitt hendelse fra Closed til den antatte terminale tilstanden Deleted. Ingen faktisk klokke. Ny state/event/overgang er avvik fra readerens modell. |
-| A7 | `Game_Review` tolkes som Review, uten å lage en ekstra anmeldelsesklasse. `game_page` blir en liten C++-controller med submit_review som kaller Game.add_review. Klassen/metoden er nødvendige antakelser fra sekvensen, men ekstra mot klassediagrammet. |
+| A7 | `Game_Review` tolkes som Review, uten å lage en ekstra anmeldelsesklasse. `game_page` blir en liten C++-controller med send_inn_review som kaller Game.add_review. Klassen/metoden er nødvendige antakelser fra sekvensen, men ekstra mot klassediagrammet. |
 | A8 | Opprettelsesmetoder returnerer verdier som tegnet. De registrerer ikke pekere til midlertidige returverdier. Relasjonssamlinger kan settes via konstruktører og refererer til eksternt eide demoobjekter. create_repository, join_repository og remove_comment er plassholdere der livsløp/identitet ikke er spesifisert. Ingen skjult global lagring. |
 
 ## Omfang
@@ -30,3 +30,9 @@ autorisasjons-, database- eller grafikkfunksjoner innføres.
 En byggbar og kjørbar mock-up kan leveres. 100 % alignment kan ikke loves
 for motstridende eller uleselig input. Manglende alignment skal dokumenteres
 som faktisk resultat, og planen flyttes ikke til completed så lenge dette gjenstår.
+
+## Oppfølging av sekvensmelding
+
+Metoden heter nå `send_inn_review`, som etter verifierens navnenormalisering
+matcher «Send inn review». Game_Review er fortsatt en constructor-only
+lifeline som ikke kan registreres av gjeldende runtime-verifikasjon.

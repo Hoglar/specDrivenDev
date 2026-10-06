@@ -88,8 +88,8 @@ og resultatene fra klasse- og state-kontrollene, og fortsett.
 
 ## Fase 4 — Sekvensens scenarioprogram
 
-- [x] Opprett `scenarios/write_review.cpp` og CMake-target
-      `scenario_write_review`, forutsatt filnavnet avklart i fase 1.
+- [x] Opprett `scenarios/user.cpp` og CMake-target
+      `scenario_user`, forutsatt filnavnet avklart i fase 1.
 - [x] La `main()` opprette nødvendige objekter med faste data og kalle `scenario()`.
 - [x] La `scenario()` utføre bare aktørens tegnede kall.
 - [x] Sørg for at mellomklassekall kommer fra riktig klasse, til riktig

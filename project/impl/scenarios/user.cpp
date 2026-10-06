@@ -6,7 +6,7 @@
 
 void scenario(game_library::game_page& page, game_library::Game& game,
               const game_library::User& author) {
-    const auto review = page.submit_review(game, author, "Scenario review");
+    const auto review = page.send_inn_review(game, author, "Scenario review");
     assert(review.content == "Scenario review");
 }
 int main() {

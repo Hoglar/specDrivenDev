@@ -17,7 +17,7 @@ int main() {
     Game game(1, "Open Game", "0.1", Date{std::chrono::year{2026}/10/6});
     Repository repository(1, "https://example.test/game", game, {developer});
     game_page page;
-    auto review = page.submit_review(game, user, "A deterministic review");
+    auto review = page.send_inn_review(game, user, "A deterministic review");
     assert(review.content == "A deterministic review");
     auto comment = review.add_comment(user, "A comment");
     comment.edit_content("Updated comment");

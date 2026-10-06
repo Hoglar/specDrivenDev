@@ -6,7 +6,7 @@ Status: **Byggbar og kjørbar C++20-mock-up levert. 100 % alignment er ikke oppn
 ## Leveranse
 
 Implementasjonen ligger i `project/impl/`: CMake, åtte headers, åtte
-klassekilder, `src/demo.cpp` og `scenarios/write_review.cpp`.
+klassekilder, `src/demo.cpp` og `scenarios/user.cpp`.
 De sju klassene fra klassediagrammet er implementert, sammen med
 sekvensens controller `game_page`, som er en dokumentert modellforskjell.
 
@@ -24,14 +24,14 @@ Fra repoets rot:
 cmake -S project/impl -B project/build -DCMAKE_BUILD_TYPE=Debug
 cmake --build project/build
 project/build/demo
-project/build/scenario_write_review
+project/build/scenario_user
 ```
 
 Begge programmene avsluttet med exit-kode 0. Demoen skriver
 `C++ UML mock-up: A deterministic review`. Assertions kontrollerer
 anmeldelsens innhold og repository-metadata som returneres ved download.
 
-## Kontroller
+## Kontroller ved første implementasjon
 
 - Bibliotek, demo og scenario bygget med GCC 14.2, C++20, `-Wall -Wextra`,
   uten compiler-warnings.
@@ -110,3 +110,32 @@ demoforløpene, ikke alle mulige bruksmønstre.
 Planen beholdes i `plans/`, siden kravene om 100 % alignment og full
 tilstandskontroll fortsatt står åpne. Dette rapporteres uten flere spørsmål;
 inputmodellene er ikke endret for å forbedre resultatet.
+
+## Oppfølging: sequence-user
+
+Brukeren har gitt inputfilene navnene `class.drawio` og `sequence-user.drawio`.
+Scenariokilden er derfor flyttet til `scenarios/user.cpp`, og CMake bygger
+`scenario_user`. AI-en har ikke endret input-diagrammene.
+
+Standardkommandoen `tools/verify.py project` produserer nå alle tre rapporter
+og avslutter med exit-kode 0. Alignment er fortsatt 55,9 % / 57,1 % / 70,0 %
+for klasse / sekvens / state. Sekvensen kjøres og spores korrekt; resterende
+avvik er Game_Review-lifeline og «Send inn review» versus submit_review.
+De nye rapportene ligger i `project/reports/`.
+
+## Oppfølging: metodekall matcher
+
+Controller-metoden er endret fra submit_review til `send_inn_review`, som
+matcher «Send inn review» etter verifierens dokumenterte navnenormalisering.
+Demo og scenario er oppdatert og kjørt. Inputfilenes SHA-256 er uendret.
+
+Ny standardverifikasjon gir **83,3 % sekvensalignment**: fem identiske,
+én Missing og ingen Extra/Changed. Begge kallene har riktig sender,
+mottaker, metodenavn og rekkefølge. Klasse/state er fortsatt 55,9 % / 70,0 %.
+
+Den gjenværende Missing er lifeline Game_Review. Runtime-verifikatoren
+utelater konstruktører og oppretter bare lifelines for deltakere i vanlige
+metodekall. Denne lifelinen kan derfor ikke registreres fra create-pilen
+alene, selv om Review faktisk opprettes. Å innføre et ekstra metodekall
+eller en ekstra Game_Review-klasse ville gi nye avvik fra input.
+Ingen slik endring av modell eller verifier er utført.

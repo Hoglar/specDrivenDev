@@ -15,11 +15,10 @@ import tempfile
 def main():
     repo = Path(__file__).resolve().parents[2]
     project = repo / "project"
-    sources = {
-        "firstClass.drawio": "class.drawio",
-        "gameReviewSequence.drawio": "sequence-write_review.drawio",
-        "state-user.drawio": "state-user.drawio",
-    }
+    aliases = {"firstClass.drawio": "class.drawio",
+               "gameReviewSequence.drawio": "sequence-write_review.drawio"}
+    sources = {path.name: aliases.get(path.name, path.name)
+               for path in (project / "diagrams/input").glob("*.drawio")}
     digests = {
         name: hashlib.sha256((project / "diagrams/input" / name).read_bytes()).hexdigest()
         for name in sources

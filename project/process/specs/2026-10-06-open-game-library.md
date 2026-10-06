@@ -16,9 +16,9 @@ ikke et krav om virkelig nedlasting, Git-integrasjon eller e-postutsending.
 
 Følgende filer er gjeldende input:
 
-- `project/diagrams/input/firstClass.drawio`
+- `project/diagrams/input/class.drawio`
 - `project/diagrams/input/state-user.drawio`
-- `project/diagrams/input/gameReviewSequence.drawio`
+- `project/diagrams/input/sequence-user.drawio`
 
 `models/codex-forslag/` og modellene til andre gruppemedlemmer er ikke fasit
 for dette arbeidet. Tidligere AI-forslag til roller, score, requests,
@@ -225,7 +225,7 @@ rapporteres som avvik mellom implementasjonen og input.
 At grafisk grensesnitt er utenfor omfanget utelukker ikke en ren
 controller-klasse, men en slik klasse må i så fall tegnes av brukeren.
 
-Når sekvensen er avklart, opprettes `scenarios/write_review.cpp`:
+Når sekvensen er avklart, opprettes `scenarios/user.cpp`:
 `main()` lager objekter med deterministiske data og kaller `scenario()`.
 `scenario()` gjør bare aktørens kall. Alle mellomklassekall skal følge
 sekvensen i riktig rekkefølge, uten ekstra getters eller valideringskall.
@@ -235,7 +235,7 @@ Ingen klokke, tilfeldigheter, input eller tråder brukes.
 
 | ID | Problem | Hva brukeren må avgjøre eller rette |
 |---|---|---|
-| A1 | Filnavnene oppdages ikke som klasse-/sekvensinput av standardkommandoen. | Gi `firstClass.drawio` navnet `class.drawio` og `gameReviewSequence.drawio` navnet `sequence-write_review.drawio`. `state-user.drawio` er allerede riktig. |
+| A1 | Løst: brukeren har gitt inputfilene støttede navn. | Gjeldende navn er `class.drawio`, `sequence-user.drawio` og `state-user.drawio`. Scenarioet er `scenarios/user.cpp` med target `scenario_user`. |
 | A2 | `Date` brukes, men er verken tegnet eller en definert C++-type her. | Velg en konkret type/mapping og dokumenter den. Ikke legg til en egen Date-klasse eller bytt til string uten beslutning. |
 | A3 | Repository.download mangler synlighet. | Sett eksplisitt `+`, `-` eller `#`; behold avklart returtype. |
 | A4 | Relasjoner har ingen rollenavn, uklar navigering og enkelte motstridende antallsmerker. | Tegn retning, rollenavn og entydig multiplisitet; avklar eierskap og objektenes levetid. |
@@ -278,7 +278,7 @@ tidsovergang. Sekvensleseren ignorerer create-meldingen som dokumentert.
 
 C++-implementasjonen finnes i `project/impl/`. Full alignment er ikke
 oppnådd: separat kontroll av byte-identiske inputkopier gir 55,9 % for
-klasse, 70,0 % for state og 57,1 % for sekvens. Standardkommandoen avviser
-fortsatt klasse- og sekvensfilnavnene. Dette er rapporterte begrensninger.
+klasse, 70,0 % for state og 57,1 % for sekvens. Filnavnene er senere rettet av brukeren. Standardkommandoen kan nå
+kontrollere alle tre modeller; de øvrige modellavvikene består.
 Utført implementasjon og verifikasjon er beskrevet i
 [sluttrapporten](../2026-10-06-implementasjonsrapport.md).

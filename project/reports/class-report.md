@@ -63,7 +63,7 @@ _None._
 | class `game_page` | `class game_page` |
 | attribute `User.state` | `-State state` |
 | attribute `User.suspension_active` | `-bool suspension_active` |
-| method `game_page.submit_review()` | `+submit_review(Game, User, string) Review` |
+| method `game_page.send_inn_review()` | `+send_inn_review(Game, User, string) Review` |
 | method `Repository.download()` | `+download() Repository` |
 | method `User.handle()` | `+handle(Event) void` |
 | method `User.no_active_suspension()` | `-no_active_suspension() bool` |
