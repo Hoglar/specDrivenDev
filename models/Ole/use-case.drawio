@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="uGtneh2B8gNF9eoR0jTW" name="Page-1">
-        <mxGraphModel dx="960" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="1750" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -46,20 +46,26 @@
                 <mxCell id="DwAiUJeqrJkuuX_eh-kL-127" edge="1" parent="1" source="DwAiUJeqrJkuuX_eh-kL-101" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" target="DwAiUJeqrJkuuX_eh-kL-123">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="KNA8eqTC3ujnR2auLoRy-92" edge="1" parent="1" source="DwAiUJeqrJkuuX_eh-kL-101" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" target="KNA8eqTC3ujnR2auLoRy-91">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="DwAiUJeqrJkuuX_eh-kL-101" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Developer" vertex="1">
                     <mxGeometry height="60" width="30" x="920" y="480" as="geometry"/>
                 </mxCell>
                 <mxCell id="DwAiUJeqrJkuuX_eh-kL-122" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Manage game" vertex="1">
-                    <mxGeometry height="70" width="140" x="660" y="430" as="geometry"/>
+                    <mxGeometry height="70" width="140" x="660" y="360" as="geometry"/>
                 </mxCell>
                 <mxCell id="DwAiUJeqrJkuuX_eh-kL-123" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Contribute to game" vertex="1">
-                    <mxGeometry height="70" width="140" x="660" y="545" as="geometry"/>
+                    <mxGeometry height="70" width="140" x="660" y="580" as="geometry"/>
                 </mxCell>
                 <mxCell id="DwAiUJeqrJkuuX_eh-kL-125" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Request game feature" vertex="1">
                     <mxGeometry height="70" width="140" x="340" y="640" as="geometry"/>
                 </mxCell>
                 <mxCell id="t8nJ8O9gwTo3G3SZt5GM-91" edge="1" parent="1" source="91" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="DwAiUJeqrJkuuX_eh-kL-100">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KNA8eqTC3ujnR2auLoRy-91" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Handle feature request" vertex="1">
+                    <mxGeometry height="70" width="140" x="660" y="475" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
