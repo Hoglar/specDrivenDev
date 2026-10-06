@@ -1,0 +1,90 @@
+<mxfile agent="Codex — forslag, ikke godkjent fasit">
+  <diagram id="proposal" name="Forslag — brukstilfeller for mock-up">
+    <mxGraphModel page="0" grid="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system" value="Open Game Library — foreslått mock-up" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;swimlane;startSize=45;fillColor=#f5f5f5;">
+          <mxGeometry as="geometry" x="230" y="40" width="810" height="900" />
+        </mxCell>
+        <mxCell id="player" value="Spiller" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;">
+          <mxGeometry as="geometry" x="50" y="230" width="60" height="100" />
+        </mxCell>
+        <mxCell id="developer" value="Utvikler" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;">
+          <mxGeometry as="geometry" x="1170" y="230" width="60" height="100" />
+        </mxCell>
+        <mxCell id="library" value="Legge spill i biblioteket" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="40" y="80" width="280" height="65" />
+        </mxCell>
+        <mxCell id="p-library" value="" edge="1" parent="1" source="player" target="library" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="download" value="Hente spill-lenke" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="40" y="205" width="280" height="65" />
+        </mxCell>
+        <mxCell id="p-download" value="" edge="1" parent="1" source="player" target="download" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="review" value="Skrive anmeldelse" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="40" y="330" width="280" height="65" />
+        </mxCell>
+        <mxCell id="p-review" value="" edge="1" parent="1" source="player" target="review" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="comment" value="Kommentere anmeldelse" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="40" y="455" width="280" height="65" />
+        </mxCell>
+        <mxCell id="p-comment" value="" edge="1" parent="1" source="player" target="comment" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="request" value="Foreslå funksjon" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="40" y="580" width="280" height="65" />
+        </mxCell>
+        <mxCell id="p-request" value="" edge="1" parent="1" source="player" target="request" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="vote" value="Stemme på forslag" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="40" y="705" width="280" height="65" />
+        </mxCell>
+        <mxCell id="p-vote" value="" edge="1" parent="1" source="player" target="vote" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="source" value="Hente kildekode-lenke" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="480" y="80" width="280" height="65" />
+        </mxCell>
+        <mxCell id="d-source" value="" edge="1" parent="1" source="developer" target="source" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="join" value="Bli bidragsyter i repo" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="480" y="205" width="280" height="65" />
+        </mxCell>
+        <mxCell id="d-join" value="" edge="1" parent="1" source="developer" target="join" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="repo_comment" value="Kommentere repo" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="480" y="330" width="280" height="65" />
+        </mxCell>
+        <mxCell id="d-repo_comment" value="" edge="1" parent="1" source="developer" target="repo_comment" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="handle" value="Behandle funksjonsforslag" vertex="1" parent="system" style="html=1;whiteSpace=wrap;fontSize=14;ellipse;">
+          <mxGeometry as="geometry" x="480" y="455" width="280" height="65" />
+        </mxCell>
+        <mxCell id="d-handle" value="" edge="1" parent="1" source="developer" target="handle" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=none;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="inherit" value="" edge="1" parent="1" source="developer" target="player" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1200" y="10" />
+              <mxPoint x="80" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" value="Utvikler er en brukerrolle. Samme person kan ha begge roller.&#10;Kontolivsløpet vises separat i state-user.&#10;Søk, publisering, forks og donasjon er foreslått utsatt." vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=note;fillColor=#fff2cc;">
+          <mxGeometry as="geometry" x="270" y="810" width="710" height="105" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

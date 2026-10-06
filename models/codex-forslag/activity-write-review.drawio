@@ -1,0 +1,83 @@
+<mxfile agent="Codex — forslag, ikke godkjent fasit">
+  <diagram id="proposal" name="Forslag — skrive anmeldelse">
+    <mxGraphModel page="0" grid="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=startState;fillColor=#000000;">
+          <mxGeometry as="geometry" x="355" y="35" width="30" height="30" />
+        </mxCell>
+        <mxCell id="write" value="Spiller: skriv tittel, tekst og score" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rounded=1;">
+          <mxGeometry as="geometry" x="230" y="115" width="280" height="65" />
+        </mxCell>
+        <mxCell id="submit" value="Spiller: send anmeldelse" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rounded=1;">
+          <mxGeometry as="geometry" x="230" y="240" width="280" height="65" />
+        </mxCell>
+        <mxCell id="active" value="Game spør User:&#10;er kontoen aktiv?" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rhombus;">
+          <mxGeometry as="geometry" x="290" y="360" width="160" height="100" />
+        </mxCell>
+        <mxCell id="blocked" value="Vis at kontoen ikke kan publisere" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rounded=1;">
+          <mxGeometry as="geometry" x="690" y="380" width="290" height="65" />
+        </mxCell>
+        <mxCell id="valid" value="Game: gyldig&#10;tekst og score?" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rhombus;">
+          <mxGeometry as="geometry" x="290" y="545" width="160" height="100" />
+        </mxCell>
+        <mxCell id="error" value="Vis valideringsfeil" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rounded=1;">
+          <mxGeometry as="geometry" x="40" y="560" width="190" height="65" />
+        </mxCell>
+        <mxCell id="store" value="Game: opprett Review og kall update()" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rounded=1;">
+          <mxGeometry as="geometry" x="230" y="730" width="280" height="65" />
+        </mxCell>
+        <mxCell id="show" value="Vis bekreftelse" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;rounded=1;">
+          <mxGeometry as="geometry" x="230" y="865" width="280" height="65" />
+        </mxCell>
+        <mxCell id="done" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=endState;fillColor=#000000;">
+          <mxGeometry as="geometry" x="355" y="995" width="30" height="30" />
+        </mxCell>
+        <mxCell id="stop" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=endState;fillColor=#000000;">
+          <mxGeometry as="geometry" x="820" y="540" width="30" height="30" />
+        </mxCell>
+        <mxCell id="e0" value="" edge="1" parent="1" source="start" target="write" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="" edge="1" parent="1" source="write" target="submit" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="" edge="1" parent="1" source="submit" target="active" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="[nei]" edge="1" parent="1" source="active" target="blocked" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="" edge="1" parent="1" source="blocked" target="stop" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="[ja]" edge="1" parent="1" source="active" target="valid" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="[nei]" edge="1" parent="1" source="valid" target="error" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="[ja]" edge="1" parent="1" source="valid" target="store" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" value="" edge="1" parent="1" source="store" target="show" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="" edge="1" parent="1" source="show" target="done" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="retry" value="Rett teksten" edge="1" parent="1" source="error" target="write" style="html=1;endArrow=open;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="100" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rules" value="Foreslåtte regler:&#10;Tittel og tekst må inneholde annet enn blanktegn.&#10;Score: heltall fra 1 til 5.&#10;Skjermbildene er dokumentasjon, ikke nye C++-klasser." vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontSize=14;shape=note;fillColor=#fff2cc;">
+          <mxGeometry as="geometry" x="650" y="750" width="380" height="150" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

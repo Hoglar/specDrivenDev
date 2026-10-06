@@ -1,0 +1,60 @@
+
+━━ /tmp/game-library-verify-z6ijjqol ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  cleaned diagrams/output/ and reports/ (0 old files removed)
+
+  Class diagram: class.drawio
+
+  [1/4] Reading the design, diagrams/input/class.drawio
+        7 classes, 9 relations -> diagrams/output/class-design.mmd
+        warning: Repository: could not read member 'download(): Repository'; skipped
+
+  [2/4] Building impl/
+        build OK
+
+  [3/4] Reading the implemented design from impl/include/
+        -> diagrams/output/class-implemented.mmd
+
+  [4/4] Comparing
+
+  ✓ alignment 55.9 % — 33 identical, 0 changed, 8 missing, 18 extra
+
+  Sequence diagram: sequence-write_review.drawio
+
+  [1/4] Reading the design, diagrams/input/sequence-write_review.drawio
+        4 lifelines, 2 messages -> diagrams/output/sequence-write_review-design.mmd
+        warning: the creation message '<<create>> (author, content)' to Game_Review is not compared (constructors are never messages); skipped
+
+  [2/4] Building impl/, with tracing
+        build OK
+
+  [3/4] Running impl/scenarios/write_review.cpp and recording its messages
+        2 messages -> diagrams/output/sequence-write_review-implemented.mmd
+
+  [4/4] Comparing
+
+  ✓ alignment 57.1 % — 4 identical, 0 changed, 2 missing, 1 extra
+
+  State machine: state-user.drawio
+
+  [1/4] Reading the design, diagrams/input/state-user.drawio
+        4 states, 6 transitions -> diagrams/output/state-user-design.mmd
+        warning: the transition Closed -> Active ('') has no event; every transition needs one
+        warning: the transition 'After(30 days)' from 'Closed' to the end symbol has no C++ counterpart (a terminal state is one without outgoing transitions); skipped
+
+  [2/4] Building impl/
+        build OK
+
+  [3/4] Reading the implemented state machine of User from impl/include/
+        -> diagrams/output/state-user-implemented.mmd
+
+  [4/4] Comparing
+
+  ✓ alignment 70.0 % — 14 identical, 0 changed, 1 missing, 5 extra
+
+━━ Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ /tmp/game-library-verify-z6ijjqol/class.drawio: alignment 55.9 % — 33 identical, 0 changed, 8 missing, 18 extra
+      /tmp/game-library-verify-z6ijjqol/reports/class-report.md
+  ✓ /tmp/game-library-verify-z6ijjqol/sequence-write_review.drawio: alignment 57.1 % — 4 identical, 0 changed, 2 missing, 1 extra
+      /tmp/game-library-verify-z6ijjqol/reports/sequence-write_review-report.md
+  ✓ /tmp/game-library-verify-z6ijjqol/state-user.drawio: alignment 70.0 % — 14 identical, 0 changed, 1 missing, 5 extra
+      /tmp/game-library-verify-z6ijjqol/reports/state-user-report.md

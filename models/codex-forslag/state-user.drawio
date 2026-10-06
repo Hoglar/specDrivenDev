@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Codex — forslag, ikke godkjent fasit" version="24.7.17">
+  <diagram name="Forslag — state-user" id="page">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="page-0" />
+        <mxCell id="page-1" parent="page-0" />
+        <mxCell id="page-s2" value="AwaitingEmailVerification" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="page-1">
+          <mxGeometry x="110" y="110" width="230" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="page-s3" value="Active" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="page-1">
+          <mxGeometry x="650" y="110" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="page-s4" value="Suspended" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="page-1">
+          <mxGeometry x="1150" y="110" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="page-s5" value="Closed" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="page-1">
+          <mxGeometry x="650" y="460" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="page-s6" value="Deleted" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="page-1">
+          <mxGeometry x="1150" y="460" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="page-i7" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="page-1">
+          <mxGeometry x="40" y="127.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="page-e8" value="" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=1;exitY=0.5000;entryX=0;entryY=0.5000;" edge="1" parent="page-1" source="page-i7" target="page-s2">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e9" value="ConfirmEmail" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=1;exitY=0.5000;entryX=0;entryY=0.5000;" edge="1" parent="page-1" source="page-s2" target="page-s3">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e10" value="Suspend / set_suspension" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=1;exitY=0.5000;entryX=0;entryY=0.5000;" edge="1" parent="page-1" source="page-s3" target="page-s4">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e11" value="Reactivate / clear_suspension" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=0;exitY=0.7769;entryX=1;entryY=0.7769;" edge="1" parent="page-1" source="page-s4" target="page-s3">
+          <mxGeometry relative="1" x="-0.5" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e12" value="Close" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=0.5000;exitY=1;entryX=0.5000;entryY=0;" edge="1" parent="page-1" source="page-s3" target="page-s5">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e13" value="Close" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=0.1111;exitY=1.0;entryX=0.8889;entryY=0.0;" edge="1" parent="page-1" source="page-s4" target="page-s5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="440" />
+              <mxPoint x="810" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e14" value="Reopen [has_no_active_suspension]" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=0.6333;exitY=0;entryX=0.6333;entryY=1;" edge="1" parent="page-1" source="page-s5" target="page-s3">
+          <mxGeometry relative="1" x="-0.5" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-e15" value="RetentionExpired" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=1;exitY=0.5000;entryX=0;entryY=0.5000;" edge="1" parent="page-1" source="page-s5" target="page-s6">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="page-f16" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="page-1">
+          <mxGeometry x="1370" y="477.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="page-e17" value="" style="html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;endArrow=open;endSize=12;exitX=1;exitY=0.5000;entryX=0;entryY=0.5000;" edge="1" parent="page-1" source="page-s6" target="page-f16">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
