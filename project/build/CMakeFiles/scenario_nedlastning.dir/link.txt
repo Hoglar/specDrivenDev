@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/scenario_nedlastning.dir/link.d CMakeFiles/scenario_nedlastning.dir/scenarios/nedlastning.cpp.o -o scenario_nedlastning  libogl.a

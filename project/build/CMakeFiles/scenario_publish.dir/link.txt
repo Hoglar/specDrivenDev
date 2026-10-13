@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/scenario_publish.dir/link.d CMakeFiles/scenario_publish.dir/scenarios/publish.cpp.o -o scenario_publish  libogl.a

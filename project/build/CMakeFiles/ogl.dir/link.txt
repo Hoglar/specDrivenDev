@@ -1,0 +1,2 @@
+/usr/bin/ar qc libogl.a CMakeFiles/ogl.dir/src/comment.cpp.o CMakeFiles/ogl.dir/src/game.cpp.o CMakeFiles/ogl.dir/src/repository.cpp.o CMakeFiles/ogl.dir/src/request.cpp.o CMakeFiles/ogl.dir/src/review.cpp.o CMakeFiles/ogl.dir/src/user.cpp.o
+/usr/bin/ranlib libogl.a
