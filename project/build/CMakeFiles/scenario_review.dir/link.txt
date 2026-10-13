@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/scenario_review.dir/link.d CMakeFiles/scenario_review.dir/scenarios/review.cpp.o -o scenario_review  libogl.a

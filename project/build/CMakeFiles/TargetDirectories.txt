@@ -1,8 +1,0 @@
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/ogl.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/demo.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/scenario_nedlastning.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/scenario_publish.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/scenario_request.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/scenario_review.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/edit_cache.dir
-/home/hoglar/modelering/lab1/specDrivenDev/project/build/CMakeFiles/rebuild_cache.dir
