@@ -1,0 +1,78 @@
+<mxfile host="65bd71144e">
+    <diagram id="vwygYq8xcvVilDFMUcAh" name="Page-1">
+        <mxGraphModel dx="738" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="szHwCk7Ag6rxFJ_-lZHl-6" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;endArrow=none;endFill=0;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="220" as="sourcePoint"/>
+                        <mxPoint x="100" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="szHwCk7Ag6rxFJ_-lZHl-9" edge="1" parent="1" source="szHwCk7Ag6rxFJ_-lZHl-1" style="edgeStyle=none;html=1;" value="Publiser spill">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="250" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="szHwCk7Ag6rxFJ_-lZHl-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Developer" vertex="1">
+                    <mxGeometry height="80" width="40" x="80" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="szHwCk7Ag6rxFJ_-lZHl-8" edge="1" parent="1" source="szHwCk7Ag6rxFJ_-lZHl-7" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="255" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="szHwCk7Ag6rxFJ_-lZHl-7" parent="1" style="html=1;whiteSpace=wrap;" value="Developer Portal" vertex="1">
+                    <mxGeometry height="50" width="110" x="200" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-1" edge="1" parent="1" style="edgeStyle=none;html=1;" value="Validate">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="180" as="sourcePoint"/>
+                        <mxPoint x="430" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-2" edge="1" parent="1" source="5tPMPHCmRtxAS7K68oDW-3" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="435" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-3" parent="1" style="html=1;whiteSpace=wrap;" value="Repository" vertex="1">
+                    <mxGeometry height="50" width="110" x="380" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-4" edge="1" parent="1" style="edgeStyle=none;html=1;" value="Create Game">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="280" as="sourcePoint"/>
+                        <mxPoint x="610" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-5" edge="1" parent="1" source="5tPMPHCmRtxAS7K68oDW-6" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="615" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-6" parent="1" style="html=1;whiteSpace=wrap;" value="Game" vertex="1">
+                    <mxGeometry height="50" width="110" x="560" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-7" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" value="Valid">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="200" as="sourcePoint"/>
+                        <mxPoint x="430" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-8" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" value="Game Created">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="310" as="sourcePoint"/>
+                        <mxPoint x="610" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5tPMPHCmRtxAS7K68oDW-9" edge="1" parent="1" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" value="Publisert">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="360" as="sourcePoint"/>
+                        <mxPoint x="240" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
