@@ -1,0 +1,4 @@
+# Concept
+The Open Game Library will be based on the technology of git, centered around game development. The core concept being that the source code of listed games is always available and anyone can contribute and suggest changes to the game. Every version of every game will then be available to download and forks of a game can then be made by anyone to continually allow the playerbase to participate in the development of the game. 
+
+The Open Game Library's function will then be to facilitate the functionality of git for public distribution and development of games, effectivly making the development of the games open-source. 

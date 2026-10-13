@@ -4,9 +4,9 @@ Instructions for AI coding agents (GitHub Copilot, Claude, Codex, …) working i
 
 Your job is to **implement a UML design in C++**, in `project/impl/`: a class diagram and, when
 the person drew them, the state machines of its classes and the sequence diagrams of its
-scenarios. A person drew the design; a verifier then compares your implementation with it,
-element by element, and reports every difference. Success is **100 % alignment** on every
-report: the code is exactly the design, nothing more and nothing less.
+scenarios. Implement exactly the human-drawn design, nothing more and nothing less.
+Verification is performed by the user afterwards, independently of implementation.
+Do not run verification or use its results as feedback during implementation.
 
 ## Where things are
 
@@ -15,15 +15,15 @@ report: the code is exactly the design, nothing more and nothing less.
 | `project/diagrams/input/class.drawio` | the class diagram, drawn by a person | read — **never edit** |
 | `project/diagrams/input/state-<class>.drawio` | the state machine of one class, drawn by a person; there may be none, one or several | read — **never edit** |
 | `project/diagrams/input/sequence-<scenario>.drawio` | one scenario as a sequence diagram, drawn by a person; none, one or several | read — **never edit** |
-| `project/diagrams/output/*-design.mmd` | the same designs as mermaid text, generated | read — easiest to parse |
+| `project/diagrams/output/` | generated design and comparison files | do not generate or use during implementation |
 | `project/impl/` | the implementation | **write here, and only here** |
 | `project/process/` | specs and plans for your work (see below) | write |
-| `project/reports/*-report.md` | the verification reports, generated, one per design file | read |
+| `project/reports/*-report.md` | the verification reports, generated, one per design file | do not generate or read during implementation |
 | `examples/` | worked examples | read |
 | `tools/` | the verifier | read |
 
-The `.mmd` files are created by the verifier. If they are missing, run the verifier once (see
-[Check your work](#check-your-work)); it converts the drawings even before any code exists.
+Read the input `.drawio` files directly. Do not run the verifier even to convert drawings
+to `.mmd` files. Follow the input design and mapping rules without verification feedback.
 
 ## Project structure
 
@@ -104,7 +104,7 @@ methods, nothing more. [examples/3-state-simple/impl/include/home/door.hpp](exam
 is the pattern to copy; it is the same in every state machine.
 
 **5. Implement a sequence diagram as a scenario program, and make exactly the drawn calls.**
-A `sequence-<scenario>.drawio` is verified by *running* `impl/scenarios/<scenario>.cpp` in a
+A `sequence-<scenario>.drawio` will later be verified independently by *running* `impl/scenarios/<scenario>.cpp` in a
 traced build: every call between the project's classes is recorded, in order, and compared
 with the drawn messages. The *Sequence diagrams* section of the mapping document has the
 rules; in short:
@@ -123,19 +123,17 @@ rules; in short:
 [examples/5-sequence-simple/impl/scenarios/set_target.cpp](examples/5-sequence-simple/impl/scenarios/set_target.cpp)
 is the pattern to copy.
 
-## Check your work
+## Build and handoff
 
-Run the verifier after every change:
+Build with CMake and the C++ compiler directly; fix build errors and compiler warnings.
+Do not run `tools/verify.py`, the VS Code verification tasks, tracing, or other UML-to-code
+comparison tools during implementation. Do not generate, read, or use verification reports
+or comparison diagrams to guide changes. Do not edit generated results manually.
 
-- **VS Code:** Ctrl+Shift+B (Cmd+Shift+B on macOS), choose `project`.
-- **Terminal:** `.venv/bin/python tools/verify.py project` (the VS Code task *Set up Python
-  environment* creates `.venv/` the first time).
-
-Then read every report in `project/reports/`: `class-report.md`, one `state-<class>-report.md`
-per state machine and one `sequence-<scenario>-report.md` per scenario. Fix every **Changed**,
-**Missing** and **Extra** entry and run it again until every alignment is 100 %. If a build error is reported, the compiler's
-messages are printed above the summary. Do not edit the report or the files in
-`project/diagrams/output/`: they are regenerated on every run.
+The user performs verification afterwards as a separate activity. Implementation completion
+does not depend on a verification score. At handoff, describe what was implemented, the
+build status, and any unresolved requirements. State that verification was not performed;
+do not claim verified alignment.
 
 ## Process files
 
@@ -146,8 +144,8 @@ Keep your working notes in `project/process/`:
   scenario with its messages in order, and the C++ construct each one maps to.
 - `plans/` — how you will build it: a checklist of steps, one file per piece of work, named
   `YYYY-MM-DD-<topic>.md`.
-- `plans/completed/` — move a plan here once all its steps are done and the verifier reports
-  100 %.
+- `plans/completed/` — move an implementation plan here once its implementation steps are
+  done and the build succeeds without warnings. Independent verification is not a prerequisite.
 
 ## Examples
 
