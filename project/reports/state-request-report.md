@@ -11,17 +11,17 @@
 
 ## Overview
 
-**Alignment: 46.7 %** — 7 of the 15 elements that appear in either diagram are identical in both.
+**Alignment: 100.0 %** — 13 of the 13 elements that appear in either diagram are identical in both.
 
 | | States | Events | Transitions | **Total** |
 |---|--:|--:|--:|--:|
-| In design | 4 | 1 | 4 | **9** |
+| In design | 4 | 4 | 5 | **13** |
 | In implemented design | 4 | 4 | 5 | **13** |
-| ✅ Identical | 4 | 1 | 2 | **7** |
+| ✅ Identical | 4 | 4 | 5 | **13** |
 | ✏️ Changed | 0 | 0 | 0 | **0** |
-| ➖ Missing | 0 | 0 | 2 | **2** |
-| ➕ Extra | 0 | 3 | 3 | **6** |
-| **Alignment** | 100.0 % | 25.0 % | 28.6 % | **46.7 %** |
+| ➖ Missing | 0 | 0 | 0 | **0** |
+| ➕ Extra | 0 | 0 | 0 | **0** |
+| **Alignment** | 100.0 % | 100.0 % | 100.0 % | **100.0 %** |
 
 ### What the numbers mean
 
@@ -43,32 +43,13 @@ An *element* is one state, one event, or one transition (the initial transition 
 
 _None._
 
-### ➖ Missing (2)
+### ➖ Missing (0)
 
-| Element | As drawn in the design |
-|---|---|
-| transition `Accepted on (no event)` | `Accepted --> Completed` |
-| transition `Pending on (no event) []` | `Pending --> Rejected` |
+_None._
 
-### ➕ Extra (6)
+### ➕ Extra (0)
 
-| Element | As found in the implementation |
-|---|---|
-| event `accept` | `accept` |
-| event `complete` | `complete` |
-| event `reject` | `reject` |
-| transition `Accepted on complete` | `Accepted --> Completed : complete` |
-| transition `Pending on accept` | `Pending --> Accepted : accept` |
-| transition `Pending on reject` | `Pending --> Rejected : reject` |
-
-### ⚠️ Warnings (4)
-
-Things that could not be read or counted, in the design or in the implementation. They are not in any count above, so check them by hand.
-
-- the transition Pending -> Accepted ('') has no event; every transition needs one
-- the transition Pending -> Rejected ('') has no event; every transition needs one
-- the transition Accepted -> Completed ('') has no event; every transition needs one
-- the transition Pending -> Rejected on '' is drawn twice
+_None._
 
 ---
 

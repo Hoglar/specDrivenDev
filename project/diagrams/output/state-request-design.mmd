@@ -7,7 +7,7 @@ stateDiagram-v2
     Accepted
     Completed
     [*] --> Pending
-    Pending --> Accepted
+    Pending --> Accepted : accept
     Rejected --> Pending : update
-    Pending --> Rejected
-    Accepted --> Completed
+    Pending --> Rejected : reject
+    Accepted --> Completed : complete
